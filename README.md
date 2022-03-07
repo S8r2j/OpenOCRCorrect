@@ -1,3 +1,4 @@
+
 # OpenOCRCorrect
 A framework for assisting human while correcting the OCR errors in documents, mostly dedicated to Indian Languages.
 Tested on Sanskrit, Hindi, Marathi and English.
@@ -124,4 +125,7 @@ Visit: https://murilo.wordpress.com/2011/02/01/fast-and-easy-levenshtein-distanc
 We further developed the code to extract OCR confusions from unalligned OCR text, alligned OCR text and Correct text.
 5. Abdulkader, Ahmad, and Mathew R. Casey. "Low cost correction of OCR errors using learning in a multi-engine environment." Document Analysis and Recognition, 2009. ICDAR'09. 10th International Conference on. IEEE, 2009.
 
+
+=======
+# OpenOCRcopy
 
