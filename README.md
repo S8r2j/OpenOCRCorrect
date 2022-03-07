@@ -3,9 +3,10 @@
 A framework for assisting human while correcting the OCR errors in documents, mostly dedicated to Indian Languages.
 Tested on Sanskrit, Hindi, Marathi and English.
 
-The interactive features as of now are:-
+Improved Features are:
 1. Error detection.
-2. Generating Suggestions (will replace this to auto-completion in Future Work).
+2. Provides the user to write in different text formats like bold, subscript and superscript as well.
+3. Generating Suggestions (will replace this to auto-completion in Future Work).
 Please mail to rohitsaluja22@gmail.com or file an issue for any suggestions related to auto-completion.
 
 Following information is updated on the fly, after correction of each page:-
@@ -25,6 +26,9 @@ https://www.youtube.com/watch?v=iYagbg-yKsc
 3. The incorrect words are colored with blue, green and red strings from Dictionary. This improves readability.
 4. The user can type in slp1 format or right click on the word (right click suggestion may be a partially corrected word) to correct the words. "Ctrl+d" converts the slp1 word-under-cursor to Devanagari and removes the color coding from the word-under-cursor.
 Right click works after clicking left on the word-under-cursor. Please mail to rohitsaluja22@gmail.com or file an issue for any suggestions to correct this.
+
+# What has been done?
+ New actions are updated in the toolbar which will allow the user to make the characters bold, unbold, subscript and superscript
 
 # Ubuntu and Qt version
 
@@ -116,16 +120,5 @@ If you use this framework or learn from our publications, please cite our papers
   pages={143--161}
 }
 ```
-# References:
-1. We started the code (and used icons) from: https://www.youtube.com/watch?v=x858_WCtl_Y
-2. We further improved the application via ideas from "QPlainTextEdit With In Line Spell Check". Visit: https://john.nachtimwald.com/2009/08/22/qplaintextedit-with-in-line-spell-check/
-3. For generating suggestions and  we used "Algorithm: Edit distance using a trie-tree (Dynamic Programming)" by Author: Murilo Adriano Vasconcelos <muriloufg@gmail.com>.
-Visit: https://murilo.wordpress.com/2011/02/01/fast-and-easy-levenshtein-distance-using-a-trie-in-c/
-4. For extracting OCR confusions, we used C++ implementation of "A linear space algorithm for computing maximal common subsequences" by D. S. Hirschberg for allignment. Visit  http://portal.acm.org/citation.cfm?id=360861. 
-We further developed the code to extract OCR confusions from unalligned OCR text, alligned OCR text and Correct text.
-5. Abdulkader, Ahmad, and Mathew R. Casey. "Low cost correction of OCR errors using learning in a multi-engine environment." Document Analysis and Recognition, 2009. ICDAR'09. 10th International Conference on. IEEE, 2009.
-
-
-=======
-# OpenOCRcopy
-
+# Challenges
+Subscript and Superscripts can be done only by selecting the desired characters from the middle of the set of characters
