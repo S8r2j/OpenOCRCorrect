@@ -209,12 +209,20 @@ p, li { white-space: pre-wrap; }
     <addaction name="actionHindi"/>
     <addaction name="actionEnglish"/>
    </widget>
+   <widget class="QMenu" name="menuText_Format">
+    <property name="title">
+     <string>Text Format</string>
+    </property>
+    <addaction name="actionsubscript"/>
+    <addaction name="actionsuperscript"/>
+   </widget>
    <addaction name="menuSelectLanguage"/>
    <addaction name="menuOCR_Correction_Window"/>
    <addaction name="menuCreateReports"/>
    <addaction name="menuSaveVariables"/>
    <addaction name="menuConvertFiles"/>
    <addaction name="menuFeatureExtraction"/>
+   <addaction name="menuText_Format"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -228,6 +236,9 @@ p, li { white-space: pre-wrap; }
    <addaction name="actionSave"/>
    <addaction name="actionSave_As"/>
    <addaction name="actionLoadData"/>
+   <addaction name="separator"/>
+   <addaction name="actionbold"/>
+   <addaction name="actionunbold"/>
    <addaction name="separator"/>
    <addaction name="actionSpell_Check"/>
    <addaction name="separator"/>
@@ -488,6 +499,26 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="toolTip">
     <string>English</string>
+   </property>
+  </action>
+  <action name="actionbold">
+   <property name="text">
+    <string>bold</string>
+   </property>
+  </action>
+  <action name="actionunbold">
+   <property name="text">
+    <string>unbold</string>
+   </property>
+  </action>
+  <action name="actionsubscript">
+   <property name="text">
+    <string>subscript</string>
+   </property>
+  </action>
+  <action name="actionsuperscript">
+   <property name="text">
+    <string>superscript</string>
    </property>
   </action>
  </widget>
